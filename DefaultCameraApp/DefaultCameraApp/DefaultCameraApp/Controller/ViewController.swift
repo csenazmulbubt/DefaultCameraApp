@@ -10,8 +10,7 @@ import AVFoundation
 import Photos
 import MobileCoreServices
 
-class ViewController: UIViewController,
-                      UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+class ViewController: UIViewController {
     
     let cameraPicker = CameraPicker()
 
@@ -22,7 +21,6 @@ class ViewController: UIViewController,
     
     //MARK: - showPickerButtonAction
     @IBAction func showPickerButtonAction(_ sender: UIButton) {
-        //self.openCamera()
         PrivacyPermission.cameraAsscessRequest { [weak self] success in
             guard let self = self else { return }
             if success {
@@ -43,9 +41,7 @@ class ViewController: UIViewController,
             }
         }
     }
-
 }
-
 
 extension ViewController {
    
