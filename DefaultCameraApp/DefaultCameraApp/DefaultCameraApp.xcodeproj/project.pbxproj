@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00497752298C1EDD00045FAE /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00497751298C1EDD00045FAE /* CameraPicker.swift */; };
+		00497754298C1FE700045FAE /* PrivacyPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00497753298C1FE700045FAE /* PrivacyPermission.swift */; };
+		00497758298C240400045FAE /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00497757298C240400045FAE /* Extentions.swift */; };
+		0049775C298C26D400045FAE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0049775B298C26D400045FAE /* Constants.swift */; };
 		007569E32989881600793EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007569E22989881600793EF3 /* AppDelegate.swift */; };
 		007569E52989881600793EF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007569E42989881600793EF3 /* SceneDelegate.swift */; };
 		007569E72989881600793EF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007569E62989881600793EF3 /* ViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00497751298C1EDD00045FAE /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		00497753298C1FE700045FAE /* PrivacyPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPermission.swift; sourceTree = "<group>"; };
+		00497757298C240400045FAE /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		0049775B298C26D400045FAE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		007569DF2989881600793EF3 /* DefaultCameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultCameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007569E22989881600793EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		007569E42989881600793EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0049774A298C1DDF00045FAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				007569E62989881600793EF3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0049774B298C1DF500045FAE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				007569E42989881600793EF3 /* SceneDelegate.swift */,
+				007569E22989881600793EF3 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0049774C298C1E0800045FAE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0049775A298C26BF00045FAE /* Constants */,
+				00497759298C241D00045FAE /* Extentions */,
+				00497755298C201300045FAE /* CameraPicker */,
+				00497750298C1E8E00045FAE /* PrivacyPermission */,
+				0049774F298C1E6A00045FAE /* Bindings */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0049774D298C1E1B00045FAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0049774E298C1E2C00045FAE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0049774F298C1E6A00045FAE /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bindings;
+			sourceTree = "<group>";
+		};
+		00497750298C1E8E00045FAE /* PrivacyPermission */ = {
+			isa = PBXGroup;
+			children = (
+				00497753298C1FE700045FAE /* PrivacyPermission.swift */,
+			);
+			path = PrivacyPermission;
+			sourceTree = "<group>";
+		};
+		00497755298C201300045FAE /* CameraPicker */ = {
+			isa = PBXGroup;
+			children = (
+				00497751298C1EDD00045FAE /* CameraPicker.swift */,
+			);
+			path = CameraPicker;
+			sourceTree = "<group>";
+		};
+		00497759298C241D00045FAE /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				00497757298C240400045FAE /* Extentions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		0049775A298C26BF00045FAE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0049775B298C26D400045FAE /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		007569D62989881600793EF3 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +189,11 @@
 		007569E12989881600793EF3 /* DefaultCameraApp */ = {
 			isa = PBXGroup;
 			children = (
-				007569E22989881600793EF3 /* AppDelegate.swift */,
-				007569E42989881600793EF3 /* SceneDelegate.swift */,
-				007569E62989881600793EF3 /* ViewController.swift */,
+				0049774E298C1E2C00045FAE /* ViewModel */,
+				0049774D298C1E1B00045FAE /* Model */,
+				0049774C298C1E0800045FAE /* Helper */,
+				0049774B298C1DF500045FAE /* Application */,
+				0049774A298C1DDF00045FAE /* Controller */,
 				007569E82989881600793EF3 /* Main.storyboard */,
 				007569EB2989881A00793EF3 /* Assets.xcassets */,
 				007569ED2989881A00793EF3 /* LaunchScreen.storyboard */,
@@ -260,7 +352,11 @@
 			files = (
 				007569E72989881600793EF3 /* ViewController.swift in Sources */,
 				007569E32989881600793EF3 /* AppDelegate.swift in Sources */,
+				00497758298C240400045FAE /* Extentions.swift in Sources */,
+				00497752298C1EDD00045FAE /* CameraPicker.swift in Sources */,
+				0049775C298C26D400045FAE /* Constants.swift in Sources */,
 				007569E52989881600793EF3 /* SceneDelegate.swift in Sources */,
+				00497754298C1FE700045FAE /* PrivacyPermission.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +535,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y3VRYY266M;
+				DEVELOPMENT_TEAM = GDHMVG3F84;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DefaultCameraApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -467,7 +563,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y3VRYY266M;
+				DEVELOPMENT_TEAM = GDHMVG3F84;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DefaultCameraApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
