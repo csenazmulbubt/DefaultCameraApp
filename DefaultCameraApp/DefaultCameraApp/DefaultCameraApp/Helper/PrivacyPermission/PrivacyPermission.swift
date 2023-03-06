@@ -21,7 +21,7 @@ class PrivacyPermission: NSObject {
         } else {
             AVCaptureDevice.requestAccess(for: .video) { granted in
                 if granted {
-                    completionHandler(true)
+                    PrivacyPermission.showMicroPhonePermission(completionHandler: completionHandler)
                 } else {
                     completionHandler(false)
                     PrivacyPermission.showAlert(targetName: "Camera", completion: nil)
@@ -57,9 +57,16 @@ class PrivacyPermission: NSObject {
             completionHandler(false)
             PrivacyPermission.showAlert(targetName: "Microphone", completion: nil)
         case .undetermined:
-            AVAudioSession.sharedInstance().requestRecordPermission({ granted in
+            AVAudioSession.sharedInstance().requestRecordPermission({ isGranted in
                 // Handle granted
-                granted ? completionHandler(true) : completionHandler(false); PrivacyPermission.showAlert(targetName: "Microphone", completion: nil)
+                print("Granted",isGranted)
+                if isGranted {
+                    completionHandler(true)
+                }
+                else{
+                    completionHandler(false)
+                    PrivacyPermission.showAlert(targetName: "Microphone", completion: nil)
+                }
             })
         @unknown default:
             print("Unknown case")
